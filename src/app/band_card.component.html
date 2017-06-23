@@ -1,0 +1,16 @@
+<h1 class="title">Rock n' Roll </h1>
+  <h2 class="title">Hall of Fame</h2>
+  <div class="row" >
+      <div *ngFor="let band of bands" class="col s12 m6 ">
+          <div class="card" (click)="gotoDetail(band)">
+              <div class="card-image">
+
+                <span class="card-title">{{band.name}}</span>
+              </div>
+              <div class="card-content">
+                <p>{{band.country}}</p>
+              </div>
+
+          </div>
+      </div>
+  </div>
